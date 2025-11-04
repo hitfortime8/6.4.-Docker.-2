@@ -56,7 +56,7 @@ services: {}
 
 ![prom_yml](img/prom_yml.png)
 
-
+---
 
 ### Задание 4
 
@@ -67,7 +67,7 @@ services: {}
 
 ![push_conf](img/push_conf.png)
 
-
+---
 
 ### Задание 5
 
@@ -79,7 +79,7 @@ services: {}
 
 ![grafana_conf](img/grafana_conf.png)
 
-
+---
 
 ### Задание 6
 
@@ -96,7 +96,7 @@ services: {}
 
 ![prom_upd](img/prom_upd.png)
 
-
+---
 
 ### Задание 7
 
@@ -115,7 +115,7 @@ services: {}
 
 ![grafana_graph](img/grafana_my_graph.png)
 
-
+---
 
 ### Задание 8
 
