@@ -90,8 +90,36 @@ services: {}
 4. `Запустите сценарий в detached режиме`
 
 Добавил очередность запуска с помощью инструкций `depends_on:`. Таким образом сперва запускается `pushgateway`, затем `prometheus`, следом `grafana`.
-Режимы запуска и использование одной сети настраивал заранее, можно увидеть это на скриншотах из заданий ранее.
+Режимы запуска и использование одной сети настраивал заранее, можно увидеть это на скриншотах из предыдущих заданий.
 
 `Обновленные инструкции для прометея`
 
 ![prom_upd](img/prom_upd.png)
+
+
+
+### Задание 7
+
+
+1. `Выполните запрос в Pushgateway для помещения метрики <ваши фамилия и инициалы> со значением 5 в Prometheus: echo "<ваши фамилия и инициалы> 5" | curl --data-binary @- http://localhost:9091/metrics/job/netology`
+2. `Залогиньтесь в Grafana с помощью логина и пароля из предыдущего задания`
+3. `Cоздайте Data Source Prometheus (Home -> Connections -> Data sources -> Add data source -> Prometheus -> указать "Prometheus server URL = http://prometheus:9090" -> Save & Test)`
+4. `Создайте график на основе добавленной в пункте 5 метрики (Build a dashboard -> Add visualization -> Prometheus -> Select metric -> Metric explorer -> <ваши фамилия и инициалы -> Apply.`
+
+* Compose файл находится в этой же директории, так как это последнее задание где он изменяется - думаю не стоит сюда еще раз прикреплять его и делать ридми нечитаемым.
+* Вывод команд `docker compose up -d` и `docker compose ps`
+
+![compose_ps](img/compose_ps.png)
+
+* Скриншот графика, отправленного через `pushgateway`
+
+![grafana_graph](img/grafana_my_graph.png)
+
+
+
+### Задание 8
+
+
+1. `Остановите и удалите все контейнеры одной командой`
+
+![compose_down](img/compose_down.png)
